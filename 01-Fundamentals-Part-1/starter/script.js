@@ -1,3 +1,4 @@
 let js = 'Amazing';
-if (js === 'amazing');
-alert('JavaScript is Fun!');
+
+let firstName = 'Andrew';
+console.log(firstName);
