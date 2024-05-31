@@ -61,7 +61,7 @@ console.log(ageAndrew > ageAndrea); // greater than
 console.log(ageAndrew < ageAndrea); // less than
 console.log(ageAndrea >= 18); // greater than or equal
 console.log(ageAndrew <= 18); // less than or equal
-*/
+
 
 const currentYear = 2024;
 const ageAndrew = currentYear - 1969;
@@ -75,3 +75,22 @@ console.log(x, y); // 10 , 10
 
 const averageAge = (ageAndrew + ageAndrea) / 2;
 console.log(ageAndrew, ageAndrea, averageAge);
+*/
+
+let massMark = 78;
+let heightMark = 1.69;
+let massJohn = 92;
+let heightJohn = 1.95;
+
+massMark = 95;
+heightMark = 1.88;
+massJohn = 85;
+heightJohn = 1.76;
+
+let BMIMark = Math.floor(massMark / heightMark ** 2);
+let BMIJohn = Math.floor(massJohn / heightJohn ** 2);
+
+console.log(BMIMark, BMIJohn);
+
+let markHigherBMI = BMIMark > BMIJohn;
+console.log(markHigherBMI);
