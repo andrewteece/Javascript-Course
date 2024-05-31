@@ -29,7 +29,7 @@ let age = 54;
 age = 55;
 console.log(age);
 
-*/
+
 
 // Math Operators
 
@@ -61,5 +61,17 @@ console.log(ageAndrew > ageAndrea); // greater than
 console.log(ageAndrew < ageAndrea); // less than
 console.log(ageAndrea >= 18); // greater than or equal
 console.log(ageAndrew <= 18); // less than or equal
+*/
+
+const currentYear = 2024;
+const ageAndrew = currentYear - 1969;
+const ageAndrea = currentYear - 1972;
 
 console.log(currentYear - 1991 > currentYear - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10
+console.log(x, y); // 10 , 10
+
+const averageAge = (ageAndrew + ageAndrea) / 2;
+console.log(ageAndrew, ageAndrea, averageAge);
