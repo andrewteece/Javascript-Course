@@ -94,7 +94,7 @@ console.log(BMIMark, BMIJohn);
 
 let markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
-*/
+
 
 const firstName = 'Andrew';
 const job = 'Developer';
@@ -106,3 +106,42 @@ const whoAmI = `I'm ${firstName}, I am a ${job}, and I am ${
 } years old`;
 
 console.log(whoAmI);
+
+
+
+let age = 24;
+let ageToVote = 18;
+
+if (age >= ageToVote) {
+  console.log('You are able to vote');
+} else {
+  console.log('You are NOT able to vote');
+}
+
+const birthYear = 1969;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = Math.floor(massMark / (heightMark * heightMark));
+const BMIJohn = Math.floor(massJohn / (heightJohn * heightJohn));
+console.log(BMIMark, BMIJohn);
+
+/* Write your code below. Good luck! 🙂 */
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`);
+} else {
+  console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`);
+}
