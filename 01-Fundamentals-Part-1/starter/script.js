@@ -127,7 +127,7 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/
+
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -138,10 +138,33 @@ const BMIMark = Math.floor(massMark / (heightMark * heightMark));
 const BMIJohn = Math.floor(massJohn / (heightJohn * heightJohn));
 console.log(BMIMark, BMIJohn);
 
-/* Write your code below. Good luck! 🙂 */
+/* Write your code below. Good luck! 🙂 
 
 if (BMIMark > BMIJohn) {
   console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`);
 } else {
   console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`);
 }
+*/
+
+// type conversion
+
+// String to Number
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+// Number to String
+console.log(String(24));
+console.log(typeof 24);
+
+// type coercion
+
+console.log('I am ' + 28 + ' years old'); // string - number - string (+)
+console.log('23' - '10' - 3); // string to number with  (-)
+console.log('23' * '2'); // 46
+console.log('23' / '2'); // 11.5
+
+let n = '1' + 1; // '11' string
+n = n - 1; // converts to number
+console.log(n); // 10
