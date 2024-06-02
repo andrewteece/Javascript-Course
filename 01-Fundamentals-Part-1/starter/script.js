@@ -169,7 +169,7 @@ let n = '1' + 1; // '11' string
 n = n - 1; // converts to number
 console.log(n); // 10
 
-*/
+
 
 // truthy & Falsy
 // 5 falsy values: 0, '', undefined, null, Nan
@@ -191,4 +191,84 @@ if (height) {
   console.log('YAY! Height is defined');
 } else {
   console.log('Height is UNDEFINED');
+}
+
+
+// Equality Operators
+
+const age = 18;
+if (age === 18) console.log('You just became an adult'); // strict
+
+const favorite = Number(prompt('What is your favorite number?'));
+console.log(favorite);
+
+if (favorite === 12) {
+  console.log('Cool, 12 is an amazing number');
+} else if (favorite === 7) {
+  console.log('7 is also a cool number');
+} else {
+  console.log('Number is not 12 or 7');
+}
+*/
+
+// Boolean Logic & Logical Operators
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+/*console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense); */
+
+/*if (hasDriversLicense && hasGoodVision) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
+
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
+
+// Challenge 3
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+console.log(Math.floor(scoreDolphins), Math.floor(scoreKoalas));
+
+if (scoreDolphins > scoreKoalas) {
+  console.log('Dolphins win the trophy');
+} else if (scoreKoalas > scoreDolphins) {
+  console.log('Koalas win the trophy');
+} else if (scoreDolphins === scoreKoalas) {
+  console.log('Both win the trophy');
+}
+*/
+
+// Bonus #1
+
+const scoreDolphins = (97 + 112 + 81) / 3;
+const scoreKoalas = (109 + 95 + 86) / 3;
+
+console.log(Math.floor(scoreDolphins), Math.floor(scoreKoalas));
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log('Dolphins win the trophy 🏆');
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log('Koalas win the trophy 🏆');
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log('Both win the trophy 🏆');
+} else {
+  console.log('No one wins the trophy');
 }
