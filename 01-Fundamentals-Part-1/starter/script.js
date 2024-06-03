@@ -317,7 +317,7 @@ if (day === 'monday') {
   console.log('Not a valid day!');
 }
 
-*/
+
 
 // Statements & Expressions
 
@@ -330,3 +330,41 @@ true && false && !false; //expression
 if (23 > 10) {
   const str = '23 is bigger';
 }
+
+
+
+// Conditional (Ternary) Operator
+
+const age = 55;
+age >= 18 // the condition
+  ? console.log('I like to drink tequila') // if
+  : console.log('I like to drink water'); // else
+
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+// compared to if/else statement below
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'Wine';
+} else {
+  drink2 = 'Water';
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'Wine' : 'water'}`);
+*/
+
+// Tip Calculator
+
+const bill = 430;
+
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value is ${
+    bill + tip
+  }`
+);
