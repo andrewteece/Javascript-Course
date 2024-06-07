@@ -26,7 +26,7 @@ console.log(fruitJuice);
 const appleOrangeJuice = foodProcessor(5, 9);
 console.log(appleOrangeJuice);
 
-*/
+
 
 // Function Declaration (has a function Name)
 
@@ -44,3 +44,38 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1969);
 console.log(age1, age2);
+*/
+
+function calculateBill(billAmount, taxRate = 0.05, tipRate = 0.15) {
+  console.log(billAmount, taxRate);
+  // this is the function body
+  console.log('Running calculate bill!!');
+  const total = billAmount + billAmount * taxRate + billAmount * tipRate;
+  return total;
+}
+
+// function call/run
+const andrewTotal = 400;
+const andrewTaxRate = 0.7;
+//const myTotal = calculateBill(andrewTotal, andrewTaxRate);
+//const myTotal2 = calculateBill(100, 0.05);
+
+// function definition
+function sayHiTo(firstName) {
+  return `Hello ${firstName}`;
+}
+
+//const greeting = sayHiTo('Andrew');
+//console.log(greeting);
+
+function doctorName(name) {
+  return `Dr. ${name}`;
+}
+
+function yell(name = 'Silly Goose') {
+  return `HEY ${name.toUpperCase()}`;
+}
+
+//console.log(yell(doctorName('Andrew')));
+console.log(yell());
+console.log(yell('Andrew'));
