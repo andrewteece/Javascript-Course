@@ -44,7 +44,7 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1969);
 console.log(age1, age2);
-*/
+
 
 function calculateBill(billAmount, taxRate = 0.05, tipRate = 0.15) {
   console.log(billAmount, taxRate);
@@ -79,3 +79,29 @@ function yell(name = 'Silly Goose') {
 //console.log(yell(doctorName('Andrew')));
 console.log(yell());
 console.log(yell('Andrew'));
+
+
+
+// Arrow Functions //
+
+// Function Expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+*/
+
+// Arrow Function
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1969);
+console.log(age3);
+
+const yearsUntilRetire = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  //return retirement;
+  return `${firstName} retires in ${retirement} years;`;
+};
+
+console.log(yearsUntilRetire(1991, 'Jonas'));
+console.log(yearsUntilRetire(1980, 'Bob'));
