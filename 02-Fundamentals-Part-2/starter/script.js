@@ -124,4 +124,106 @@ function foodProcessor(apples, oranges) {
 
 console.log(foodProcessor(2, 3));
 
+
+
+// Reviewing Functions
+
+// with Arrow function
+
+const yearsUntilRetire = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  // return retirement
+  return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetire(1978, 'Andrew'));
+
+
+// without Arrow
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetire = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    return `${firstName} retires in ${retirement} years`;
+  } else {
+    return `Congrats ${firstName} you are retired!`;
+  }
+};
+
+console.log(yearsUntilRetire(1969, 'Andrew'));
+console.log(yearsUntilRetire(1979, 'Sam'));
+
+
+// Function Declaration  -- Function that can be used BEFORE it is declared.
+
+function calcAge(birthYear) {
+  return 2037 - birthYear;
+}
+
+// Function Expression -- Essentially a function VALUE stored in a variable.
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+// Arrow Function -- Great for quick one-line functions.
+
+const calcAge = (birthYear) => 2037 - birthYear;
+
 */
+
+// JS Fundamentals - Part 2 -- Coding Challenge #1
+
+/* Your tasks:
+
+Create an arrow function calcAverage to calculate the average of 3 scores. This function should have three parameters and return a single number (the average score).
+
+Create two new variables — scoreDolphins and scoreKoalas, and assign the value returned from the calcAverage function to them (you will need to call this function, and pass scores as arguments).
+
+Create a function checkWinner that takes the average score of each team as parameters (avgDolphins and avgKoalas), and then logs the winner to the console, together with the victory points, according to the rule above. Example: Koalas win (30 vs. 13) (use avgDolphins and avgKoalas instead of hard-coded values).
+
+Use the checkWinner function to determine the winner for both DATA 1 and DATA 2.
+
+Ignore draws this time. Instead, log No team wins... to the console if there is no winner.
+
+
+
+TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
+
+TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
+*/
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+console.log(calcAverage(20, 45, 50));
+
+// TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
+// TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
+
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+
+console.log(scoreDolphins, scoreKoalas);
+
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win! (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win! (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log('No team wins...');
+  }
+}
+checkWinner(scoreDolphins, scoreKoalas);
+
+// TEST 2
+
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+checkWinner(scoreDolphins, scoreKoalas);
