@@ -198,7 +198,7 @@ Ignore draws this time. Instead, log No team wins... to the console if there is 
 TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 
 TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
-*/
+
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 console.log(calcAverage(20, 45, 50));
@@ -227,3 +227,41 @@ checkWinner(scoreDolphins, scoreKoalas);
 scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 checkWinner(scoreDolphins, scoreKoalas);
+
+*/
+
+// Arrays
+
+const friends = ['Michael', 'Thomas', 'William'];
+console.log(friends);
+
+const year = new Array(1987, 1991, 2000, 2012);
+console.log(year);
+
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Sam';
+console.log(friends);
+
+const name = ['Andrew', 'Teece', 2024 - 1969, 'web developer'];
+console.log(name);
+console.log(name.length);
+
+// Exercise
+
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+const years = [1964, 1970, 1982, 1997, 2012];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[2]);
+const age3 = calcAge(years[4]);
+
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[2]), calcAge(years[4])];
+console.log(ages);
