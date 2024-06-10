@@ -228,7 +228,7 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 checkWinner(scoreDolphins, scoreKoalas);
 
-*/
+
 
 // Arrays
 
@@ -265,3 +265,33 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[2]), calcAge(years[4])];
 console.log(ages);
+
+*/
+
+// Array Methods
+
+// add elements
+const friends = ['Michael', 'Thomas', 'William'];
+friends.push('Larry');
+console.log(friends);
+
+friends.unshift('John');
+console.log(friends);
+
+//remove elements
+friends.pop(); //last element of the array
+console.log(friends);
+
+friends.shift(); // first element of the array
+console.log(friends);
+
+// position of element in array
+console.log(friends.indexOf('Thomas'));
+
+// check to see if element is in the array
+console.log(friends.includes('Thomas'));
+console.log(friends.includes('Bob'));
+
+if (friends.includes('William')) {
+  console.log('You have a friend called William');
+}
