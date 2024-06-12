@@ -296,7 +296,7 @@ if (friends.includes('William')) {
   console.log('You have a friend called William');
 }
 
-*/
+
 
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -308,3 +308,44 @@ const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
+
+*/
+
+let age = 55;
+if (age >= 65) {
+  console.log('You get your income for your pension');
+} else if (age < 65 && age >= 18) {
+  console.log('Each month you get a salary');
+} else if (age < 18) {
+  console.log('You get an allowance');
+} else {
+  console.log('The value of the age variable is not numerical');
+}
+
+let day = 'Sunday';
+switch (day) {
+  case 'Monday':
+    console.log('Prepare weekly plan');
+    break;
+  case 'Tuesday':
+    console.log('Schedule meetings');
+    break;
+  case 'Wednesday':
+    console.log('Go to office');
+    break;
+  case 'Thursday':
+    console.log('Dr. appointment');
+    break;
+  case 'Friday':
+    console.log('Golf outing');
+    break;
+  case 'Saturday':
+    console.log('Hiking and photography');
+    break;
+  case 'Sunday':
+    console.log('Family day');
+    break;
+  default:
+    console.log('There is no such day');
+    break;
+}
