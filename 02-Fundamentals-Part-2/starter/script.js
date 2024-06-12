@@ -397,3 +397,34 @@ console.log(
 );
 
 */
+
+// Object Methods
+
+const person = {
+  firstName: 'Andrew',
+  lastName: 'Teece',
+  birthYear: 1969,
+  job: 'developer',
+  friends: ['William', 'Sam', 'Andrea'],
+  hasDriversLicense: true,
+
+  //calcAge: function () {
+  //console.log(this);
+  // return 2024 - this.birthYear;
+  //},
+  //};
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+};
+
+//console.log(person.calcAge(person.birthYear)); // dot notation
+//console.log(person['calcAge'](person.birthYear)); // bracket notation
+
+console.log(person.calcAge());
+console.log(person.age);
+
+// Challenge
+// "Andrew is a 55-year old developer"
