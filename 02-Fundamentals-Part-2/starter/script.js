@@ -309,7 +309,9 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
 
-*/
+
+
+// if/else & switch
 
 let age = 55;
 if (age >= 65) {
@@ -349,3 +351,49 @@ switch (day) {
     console.log('There is no such day');
     break;
 }
+
+
+
+// Objects
+
+const person = {
+  firstName: 'Andrew',
+  lastName: 'Teece',
+  age: 55,
+  job: 'developer',
+  friends: ['William', 'Sam', 'Andrea'],
+};
+
+//console.log(person); // dot notation
+//console.log(person.lastName); // dot notation
+//console.log(person.job); // dot notation
+//console.log(person['lastName']); // bracket notation
+
+const nameKey = 'Name';
+console.log(person['first' + nameKey]);
+console.log(person['last' + nameKey]);
+
+const interest = prompt(
+  'What do you want to know about Andrew? Choose between firstName, lastName, age, job, and friends'
+);
+/*
+if (person[interest]) {
+  console.log(person[interest]);
+} else {
+  console.log(
+    'Wrong request! Choose between firstName, lastName, age, job, and friends'
+  );
+}
+
+person.location = 'Canada';
+person['twitter'] = '@twitter.com';
+console.log(person);
+*/
+// Challenge
+// "Andrew has 3 friends, and his best friend is named Andrea"
+/*
+console.log(
+  `${person.firstName} has ${person.friends.length} friends, and his best friend is ${person.friends[2]}`
+);
+
+*/
