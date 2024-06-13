@@ -396,7 +396,7 @@ console.log(
   `${person.firstName} has ${person.friends.length} friends, and his best friend is ${person.friends[2]}`
 );
 
-*/
+
 
 // Object Methods
 
@@ -418,6 +418,10 @@ const person = {
     this.age = 2037 - this.birthYear;
     return this.age;
   },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age}-year old ${person.job}.`;
+  },
 };
 
 //console.log(person.calcAge(person.birthYear)); // dot notation
@@ -428,3 +432,42 @@ console.log(person.age);
 
 // Challenge
 // "Andrew is a 55-year old developer"
+
+console.log(person.getSummary());
+
+*/
+
+// for loop (counting up)
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+console.log('Counting completed!');
+
+// for loop (counting down)
+for (let i = 5; i > 0; i--) {
+  console.log(i);
+}
+console.log('Countdown finished');
+
+// while loop (counting down)
+let i = 5;
+while (i > 0) {
+  console.log(i);
+  i = i - 1;
+}
+console.log('Countdown finished');
+
+// while loop (counting up)
+let x = 1;
+while (x <= 5) {
+  console.log(x);
+  x++;
+}
+console.log('Counting completed!');
+
+// while loop (counting up)
+let y = 2018;
+while (y <= 2022) {
+  console.log(y);
+  y++;
+}
