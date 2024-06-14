@@ -517,7 +517,7 @@ for (let i = 2023; i < 2025; i++) {
     console.log('.....', j);
   }
 }
-   */
+  
 
 // Multiplication Table
 
@@ -534,5 +534,16 @@ for (let firstNumber = 0; firstNumber < 2; firstNumber++) {
         ' equals ' +
         firstNumber * secondNumber
     );
+  }
+}
+
+ */
+
+// Division Table
+
+//nested loops - one inside another
+for (var i = 100; i > 10; i = i - 10) {
+  for (var j = 10; j > 4; j = j - 5) {
+    console.log(i + ' divided by ' + j + ' equals ' + i / j);
   }
 }
