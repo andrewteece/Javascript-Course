@@ -471,7 +471,7 @@ while (y <= 2022) {
   console.log(y);
   y++;
 }
-  */
+
 
 const mark = {
   fullName: 'Mark Miller',
@@ -505,4 +505,34 @@ if (mark.bmi > john.bmi) {
   console.log(
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI ${mark.bmi}`
   );
+}
+
+ 
+
+// Nested Loops
+
+for (let i = 2023; i < 2025; i++) {
+  console.log(i);
+  for (let j = 6; j < 9; j++) {
+    console.log('.....', j);
+  }
+}
+   */
+
+// Multiplication Table
+
+// this loops starts at ) and stops after 1
+for (let firstNumber = 0; firstNumber < 2; firstNumber++) {
+  //console.log(firstNumber);
+
+  // nested loop in the first loop
+  for (let secondNumber = 0; secondNumber < 10; secondNumber++) {
+    console.log(
+      firstNumber +
+        'time ' +
+        secondNumber +
+        ' equals ' +
+        firstNumber * secondNumber
+    );
+  }
 }
