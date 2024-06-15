@@ -93,13 +93,27 @@ for (var i = 1; i <= 10; i++) {
     console.log('Number ' + i);
   }
 }
-  */
+ 
 
 // Nested loop
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 5; i++) {
   console.log('Number ' + i);
 
   for (let j = 1; j <= 10; j++) {
     console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
+
+ */
+
+// loop through an array
+
+const names = ['Andrew', 'Andrea', 'Dayton', 'Delaney'];
+
+for (let i = 0; i < names.length; i++) {
+  if (i === 1) {
+    console.log(names[i] + ' is the best');
+  } else {
+    console.log(names[i]);
   }
 }
