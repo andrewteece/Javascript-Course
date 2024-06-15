@@ -38,7 +38,7 @@ Bronze medal
 9
 10
 
-*/
+
 for (let i = 1; i <= 10; i++) {
   if (i === 1) {
     console.log('Gold Medal');
@@ -49,5 +49,57 @@ for (let i = 1; i <= 10; i++) {
   } else {
     // this block will run if not condition matches
     console.log(i);
+  }
+}
+
+/*
+Exercise 2. Use the completed code from the previous task, but convert the conditionals to a switch statement.
+When you code the solution, the output in the console should remain exactly the same as in the previous question.
+
+Note: You'll need three separate cases for the three medals, and a default case for all other values of the i variable.
+
+
+for (var i = 1; i <= 10; i++) {
+  switch (i) {
+    case 1:
+      console.log('Gold medal');
+      break;
+    case 2:
+      console.log('Silver medal');
+      break;
+    case 3:
+      console.log('Bronze medal');
+      break;
+    default:
+      //this block will run if no condition matches
+      console.log(i);
+  }
+}
+  */
+
+// for loop
+
+// for ([initialExpression]; [conditionExpression];  [incrementExpression]) //statement ;
+
+// INITIAL Expression: initializes a variable/counter
+// CONDITION Expression: Condition that the loop wil continue to run as long as it is met or until the condition is false.
+// INCREMENT Expression: Expression that will be executed after each iteration of the loop. Usually increments the variable.
+// STATEMENT: Code that will be executed each time the loop is run. To execute a 'block' of code, use the '{ }' syntax.
+
+/* for (let i = 0; i <= 10; i++) {
+  if (i === 7) {
+    console.log('7 is my lucky number');
+  } else {
+    console.log('Number ' + i);
+  }
+}
+  */
+
+// Nested loop
+for (let i = 1; i <= 10; i++) {
+  console.log('Number ' + i);
+
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
   }
 }
