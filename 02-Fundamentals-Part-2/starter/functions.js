@@ -31,6 +31,28 @@ function letterFinder(word, match) {
 
 letterFinder('text', 't');
 
+*/
 
+// Array to String
 
+const users = [
+  {
+    id: 1,
+    name: 'Sam Doe',
+  },
+  {
+    id: 2,
+    name: 'John Doe',
+  },
+];
 
+const usersNameArray = users.map((user) => user.name);
+console.log(usersNameArray);
+
+const csv = usersNameArray.join(', ');
+console.log(csv);
+
+const html = `<ul>
+	${users.map((user) => `<li>${user.name}</li>`).join('')}
+</ul>`;
+console.log(html);

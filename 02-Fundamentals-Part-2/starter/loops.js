@@ -179,7 +179,7 @@ while (i <= 5) {
   }
   i++;
 }
-    */
+  
 
 // Do While loops
 
@@ -188,3 +188,24 @@ do {
   console.log('Number ' + i);
   i++;
 } while (i <= 20);
+
+  
+
+// for loops keeps running while condition is TRUE
+for (let i = 1; i <= 10; i++) {
+  console.log(`Lifting weights repetition ${i}`);
+}
+
+*/
+
+// Nested loop
+
+for (let i = 1; i <= 2; i++) {
+  console.log('Number ' + i);
+
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
+
+// Looping arrays, break & continue
