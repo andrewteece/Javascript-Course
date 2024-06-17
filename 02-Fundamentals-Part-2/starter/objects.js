@@ -42,3 +42,20 @@ let drone = {
 for (let i = 0; i < arrOfKeys.length; i++) {
   console.log(drone[arrOfKeys[i]]);
 }
+
+// Arrays are Objects
+
+let fruits = [];
+fruits.push('apple');
+fruits.push('pear');
+fruits.push('pineapple');
+
+console.log(fruits);
+
+function arrayBuilder(one, two, three) {
+  const arr = [];
+  arr.push(one);
+  arr.push(two);
+  arr.push(three);
+  return arr;
+}

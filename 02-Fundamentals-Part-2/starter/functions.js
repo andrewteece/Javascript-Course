@@ -31,7 +31,7 @@ function letterFinder(word, match) {
 
 letterFinder('text', 't');
 
-*/
+
 
 // Array to String
 
@@ -56,3 +56,27 @@ const html = `<ul>
 	${users.map((user) => `<li>${user.name}</li>`).join('')}
 </ul>`;
 console.log(html);
+
+
+
+// Array are iterable
+
+let veggies = ['Onion', 'Parsley', 'Carrots'];
+console.log(veggies.length);
+
+//console.log(veggies[0]);
+//console.log(veggies[2]);
+
+for (let i = 0; i < veggies.length; i++) {
+  console.log(veggies[i]);
+}
+
+// Strings are iterable , too!!
+
+const greeting = 'Howdy';
+
+for (let i = 0; i < greeting.length; i++) {
+  console.log(greeting[i]);
+}
+
+*/
