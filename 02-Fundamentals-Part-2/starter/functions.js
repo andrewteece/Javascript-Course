@@ -100,7 +100,7 @@ Using the dot notation, assign a color property to the favCar object and give it
 Using the dot notation, assign a covertible property to the favCar object and give it a boolean value of your choice.
 
 Use the console to log the entire favCar object.
-*/
+
 
 const clothes = [];
 clothes.push('tank-top');
@@ -119,3 +119,33 @@ favCar.color = 'red';
 favCar.convertible = true;
 
 console.log(favCar);
+
+
+
+// Error Handling
+
+// Try/Catch Blocks
+
+//console.log(a + b);
+//console.log('This line is never reached');
+
+//throw new ReferenceError();
+
+try {
+  console.log(a + b);
+} catch (err) {
+  console.log(err);
+  console.log('There was an error');
+  console.log('The error was saved in the error log');
+}
+console.log('My program does not stop');
+
+*/
+
+try {
+  throw new ReferenceError();
+} catch (err) {
+  console.log(err);
+  console.log('There was a Reference Error');
+}
+console.log('My program does not stop');

@@ -1,4 +1,5 @@
 // Object Literals and Dot Notation
+/*
 
 const assistantMgr = {
   rangeTilesPerTurn: 3,
@@ -59,3 +60,23 @@ function arrayBuilder(one, two, three) {
   arr.push(three);
   return arr;
 }
+
+*/
+
+// Object Methods
+
+const car = {};
+car.color = 'Red';
+car.mileage = 86750;
+console.log(car);
+
+// add a method to the car object so that it can be call as car.turnKey()
+car.turnKey = function () {
+  console.log('The engine is running');
+};
+car.lightsOn = function () {
+  console.log('The lights are on');
+};
+console.log(car);
+car.turnKey();
+car.lightsOn();
