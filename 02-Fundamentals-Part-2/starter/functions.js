@@ -140,7 +140,7 @@ try {
 }
 console.log('My program does not stop');
 
-*/
+
 
 try {
   throw new ReferenceError();
@@ -149,3 +149,18 @@ try {
   console.log('There was a Reference Error');
 }
 console.log('My program does not stop');
+
+*/
+function addTwoNums(a, b) {
+  try {
+    if (typeof a != 'number') {
+      throw new ReferenceError('the first arugument is not a number');
+    } else if (typeof b != 'number') {
+      throw new ReferenceError('the second argument is not a number');
+    }
+  } catch (err) {
+    console.log('Error!', err);
+  }
+}
+addTwoNums(5, '5'); // "55"
+console.log('It still works');
