@@ -39,7 +39,7 @@ if (useRandom) {
 
 addTwoNums(getNumber(), getNumber());
 
-*/
+
 
 // Programming Assignment: Building a functional program
 
@@ -80,3 +80,53 @@ function styleAndCelebrate(color, background, fontSize, txt, reason) {
 
 // Call styleAndCelebrate
 styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
+
+*/
+
+// var keyword
+
+// 1. We CAN access a var variable BEFORE initialization ....
+// ... as long as the var variable si EVENTUALLY INITIALIZED
+// ... ANYWHERE in our code
+
+// console.log(user);
+
+// 2. We CAN declare and redeclare the same var variable without errors
+
+//var user = 'Andrea';
+//var user = 'Delaney';
+//var user = 'Dayton';
+
+// console.log(user);
+
+//var user;
+
+// let keyword
+
+// 1. We CANNOT access a let variable before we declare it
+// console.log(user); // ERROR!
+// let user;
+
+// 2. We CAN declare an unassigned variable with let
+// let user;
+// console.log(user);
+
+// 3. We CANNOT redeclare a let variable
+// let user = "Andrea";
+
+// 4. Bue we CAN re-assign it
+// user = "Andrew";
+// console.log(user);
+
+// const keyword
+
+// 1. The const keyword MUST BE INITIALIZED
+// console.log(user); // ERROR!
+// const user;
+
+// 2. We CANNOT access the const variable BEFORE initialization
+// console.log(user); // Unexpected token error
+// const user = "Andrew"
+
+// 3. We CANNOT redeclare a const variable
+// user = "Andrea";
