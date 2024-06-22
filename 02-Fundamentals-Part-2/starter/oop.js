@@ -21,3 +21,16 @@ function total(shoes, tax) {
 
 var toPay = total(shoes, stateTax);
 console.log(toPay);
+
+// Constructors
+function IceCream(flavor) {
+  this.flavor = flavor;
+  this.meltIt = function () {
+    console.log(`The ${this.flavor} icecream has melted`);
+  };
+}
+
+let kiwiIceCream = new IceCream('kiwi');
+let appleIceCream = new IceCream('apple');
+kiwiIceCream; // --> Icecream {flavor: 'kiwi', meltIt: ƒ}
+appleIceCream; // --> Icecream {flavor: 'apple', meltIt: ƒ}
