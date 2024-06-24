@@ -274,7 +274,7 @@ for (let i = person.length - 1; i >= 0; i--) {
   console.log(i, person[i]);
 }
 
-*/
+
 
 // Loops in loops
 
@@ -285,3 +285,42 @@ for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`Exercise ${exercise} Lifting weight repetition ${rep} `);
   }
 }
+
+
+
+// while loop
+
+// for loop for comparison to while loop
+
+//or (let rep = 1; rep <= 10; rep++) {
+//console.log(`Lifting weights repetition ${rep}`);
+//}
+
+// now the while loop
+
+let rep = 1; // counter
+while (rep <= 10) {
+  console.log(`Lifting weights repetition ${rep}`);
+  rep++;
+}
+
+
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log(`Loop has to end when a 6 is rolled`);
+  }
+}
+  */
+
+// Challenge #4
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
