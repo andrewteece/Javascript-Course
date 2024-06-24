@@ -208,7 +208,7 @@ for (let i = 1; i <= 2; i++) {
   }
 }
 
-*/
+
 
 // Looping arrays, break & continue
 
@@ -255,4 +255,21 @@ console.log('--- BREAK WITH NUMBER ---');
 for (let i = 0; i < person.length; i++) {
   if (typeof person[i] === 'number') break;
   console.log(person[i], typeof person[i]);
+}
+
+*/
+
+// Loop backwards
+
+const person = [
+  'Andrew',
+  'Teece',
+  2024 - 1969,
+  'developer',
+  ['Andrea', 'Dayton', 'Delaney'],
+  true,
+];
+
+for (let i = person.length - 1; i >= 0; i--) {
+  console.log(i, person[i]);
 }
