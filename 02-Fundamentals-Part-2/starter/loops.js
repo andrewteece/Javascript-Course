@@ -196,7 +196,7 @@ for (let i = 1; i <= 10; i++) {
   console.log(`Lifting weights repetition ${i}`);
 }
 
-*/
+
 
 // Nested loop
 
@@ -208,4 +208,19 @@ for (let i = 1; i <= 2; i++) {
   }
 }
 
+*/
+
 // Looping arrays, break & continue
+
+const person = [
+  'Andrew',
+  'Teece',
+  2024 - 1969,
+  'developer',
+  ['Andrea', 'Dayton', 'Delaney'],
+  true,
+];
+
+for (let i = 0; i < person.length; i++) {
+  console.log(person[i], typeof person[i]);
+}

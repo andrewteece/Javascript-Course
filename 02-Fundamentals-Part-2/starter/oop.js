@@ -261,7 +261,7 @@ var cuddles = new Tiger();
 cuddles.makeSound(false); // Roar!
 cuddles.makeSound(true); // purr, Roar!
 
-*/
+
 
 // OOP Challenge
 
@@ -319,3 +319,4 @@ function manager() {
   manager.doSomethingFun();
   return manager;
 }
+*/
