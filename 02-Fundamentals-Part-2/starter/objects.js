@@ -81,7 +81,7 @@ console.log(car);
 car.turnKey();
 car.lightsOn();
 
-*/
+
 
 // De-structuring array and objects
 
@@ -140,3 +140,56 @@ for (prop of Object.keys(sportsCar)) {
 
 console.log(`Iterating over oject's OWN PROPERTIES only1`);
 console.log(sportsCar);
+
+*/
+
+// Programming Assignment: Array and Object Iteration
+
+// Task 1
+
+const dairy = [
+  'cheese',
+  'sour cream',
+  'milk',
+  'yogurt',
+  'ice cream',
+  'milkshake',
+];
+
+function logDairy() {
+  for (props of dairy) {
+    console.log(props);
+  }
+}
+
+logDairy();
+
+// Task 2
+
+const animal = {
+  canJump: true,
+};
+
+const bird = Object.create(animal);
+
+bird.canFly = true;
+
+bird.hasFeathers = true;
+
+function birdCan() {
+  for (const key of Object.keys(bird)) {
+    console.log(`${key}: ${bird[key]}`);
+  }
+}
+
+birdCan();
+
+// Task 3
+
+function animalCan() {
+  for (const key in bird) {
+    console.log(`${key}: ${bird[key]}`);
+  }
+}
+
+animalCan();
