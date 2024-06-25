@@ -61,7 +61,7 @@ function arrayBuilder(one, two, three) {
   return arr;
 }
 
-*/
+
 
 // Object Methods
 
@@ -80,3 +80,7 @@ car.lightsOn = function () {
 console.log(car);
 car.turnKey();
 car.lightsOn();
+
+*/
+
+// De-structuring array and objects
