@@ -225,7 +225,7 @@ nums.filter(function (num) {
   return num > 20;
 });
 
-*/
+
 
 // map method
 
@@ -249,3 +249,86 @@ bestBoxers.get(1);
 const repetitiveFruits = ['apple', 'pear', 'apple', 'pear', 'plum', 'apple'];
 const uniqueFruits = new Set(repetitiveFruits);
 console.log(uniqueFruits);
+
+
+
+// spread operator
+
+let top3 = ['The Colosseum', 'Trevi Fountain', 'THe Vatican City'];
+
+function showItinerary(place1, place2, place3) {
+  console.log(`Visit ${place1}`);
+  console.log(`Then visit ${place2}`);
+  console.log(`Finish with a visit to ${place3}`);
+}
+showItinerary(...top3);
+
+// rest operator
+
+let top7 = [
+  'The Colosseum',
+  'Trevi Fountain',
+  'THe Vatican City',
+  'The Roman Forum',
+  'The Patheon',
+  'Piazza Venezia',
+  'The Palatine Hill',
+];
+
+const [] = top7;
+const [first, second, third, ...secondVisit] = top7;
+
+console.log(top7);
+
+///
+
+function addTaxToPrices(taxRate, ...itemsBought) {
+  return itemsBought.map((item) => taxRate * item);
+}
+
+let shoppingCart = addTaxToPrices(1.1, 46, 89, 35, 70);
+console.log(shoppingCart);
+
+*/
+
+// Join arrays, objects using the rest operator
+
+const fruits = ['apple', 'pear', 'plum'];
+const berries = ['blueberry', 'strawberry', 'blackberry'];
+const fruitsAndBerries = [...fruits, ...berries];
+console.log(fruitsAndBerries);
+
+const flying = { wings: 2 };
+const car = { wheels: 4 };
+const flyingCar = { ...flying, ...car };
+console.log(flyingCar);
+
+// add new members to arrays WITHOUT using the push() method
+
+let veggies = ['onion', 'parsley'];
+veggies = [...veggies, 'carrot', 'beetroot'];
+console.log(veggies);
+
+// convert a string to an array using the spread operator
+
+const greeting = 'Hello';
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars);
+
+// copy either an object or an array into a separate one
+
+const car1 = {
+  speed: 200,
+  color: 'red',
+};
+
+const car2 = { ...car1 };
+
+car1.speed = 220;
+
+console.log(car1.speed, car2.speed);
+
+const fruits1 = ['apples', 'pears'];
+const fruits2 = [...fruits1];
+fruits.pop();
+console.log(fruits1, 'not', fruits2);
